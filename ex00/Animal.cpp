@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/03/06 15:33:06 by agilles           #+#    #+#             */
+/*   Updated: 2025/03/06 15:33:06 by agilles          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Animal.hpp"
 
 Animal::Animal(): _type("default")
@@ -25,12 +37,12 @@ Animal &Animal::operator=(const Animal &cp)
     return (*this);
 }
 
-void Animal::makeSound(void)
+void Animal::makeSound(void)const
 {
     std::cout << "this animal doesn't make sound" << std::endl;
 }
 
-std::string Animal::getType(void)
+std::string Animal::getType(void)const
 {
     return (this->_type);
 }

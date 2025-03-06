@@ -1,34 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/06 15:33:10 by agilles           #+#    #+#             */
-/*   Updated: 2025/03/06 16:04:06 by agilles          ###   ########.fr       */
+/*   Created: 2025/03/06 16:06:21 by agilles           #+#    #+#             */
+/*   Updated: 2025/03/06 16:08:04 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cat.hpp"
+#pragma once
 
-Cat::Cat(): Animal()
-{
-    this->_type = "Cat";
-    std::cout << "Cat Default Constructor Called" << std::endl;
-}
+#include "WrongAnimal.hpp"
 
-Cat::Cat(const Cat &cp): Animal(cp)
+class WrongCat: public WrongAnimal
 {
-    std::cout << "Cat Copy Constructor Called" << std::endl;
-}
+	private:
 
-Cat::~Cat()
-{
-    std::cout << "Cat Deconstructor Called" << std::endl;
-}
+	public:
+		WrongCat();
+		WrongCat(const WrongCat &cp);
 
-void Cat::makeSound(void)const
-{
-    std::cout << this->getType() << " say Miaw Miaw" << std::endl;
-}
+		~WrongCat();
+
+		void makeSound(void)const;
+};

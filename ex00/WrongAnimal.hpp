@@ -1,34 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/06 15:33:10 by agilles           #+#    #+#             */
-/*   Updated: 2025/03/06 16:04:06 by agilles          ###   ########.fr       */
+/*   Created: 2025/03/06 16:06:25 by agilles           #+#    #+#             */
+/*   Updated: 2025/03/06 16:07:59 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cat.hpp"
+#pragma once
 
-Cat::Cat(): Animal()
-{
-    this->_type = "Cat";
-    std::cout << "Cat Default Constructor Called" << std::endl;
-}
+#include <string>
+#include <iostream>
 
-Cat::Cat(const Cat &cp): Animal(cp)
+class WrongAnimal
 {
-    std::cout << "Cat Copy Constructor Called" << std::endl;
-}
+	protected:
+		std::string _type;
 
-Cat::~Cat()
-{
-    std::cout << "Cat Deconstructor Called" << std::endl;
-}
+	public:
+		WrongAnimal();
+		WrongAnimal(const WrongAnimal &cp);
 
-void Cat::makeSound(void)const
-{
-    std::cout << this->getType() << " say Miaw Miaw" << std::endl;
-}
+		virtual ~WrongAnimal();
+
+		WrongAnimal &operator=(const WrongAnimal &cp);
+
+		void makeSound(void)const;
+
+		std::string getType(void)const;
+};
