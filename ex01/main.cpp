@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/06 15:33:15 by agilles           #+#    #+#             */
-/*   Updated: 2025/03/15 15:56:41 by agilles          ###   ########.fr       */
+/*   Updated: 2025/03/15 16:00:48 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 #include "Cat.hpp"
 #include "Dog.hpp"
 #include "Brain.hpp"
-
-#include "WrongCat.hpp"
 
 int main()
 {
