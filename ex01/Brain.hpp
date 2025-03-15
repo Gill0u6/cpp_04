@@ -6,9 +6,11 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 14:27:40 by agilles           #+#    #+#             */
-/*   Updated: 2025/03/14 15:20:02 by agilles          ###   ########.fr       */
+/*   Updated: 2025/03/15 14:40:07 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#pragma once
 
 #include <string>
 #include <iostream>

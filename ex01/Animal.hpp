@@ -15,6 +15,9 @@
 #include <string>
 #include <iostream>
 
+#include <cstdio>
+#include <cstdlib>
+
 class Animal
 {
     protected:

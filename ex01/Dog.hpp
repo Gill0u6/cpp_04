@@ -26,7 +26,11 @@ class Dog: public Animal
 
         ~Dog();
 
-        Dog operator=(const Dog &cp);
+        Dog &operator=(const Dog &cp);
 
         void makeSound(void)const;
+
+        void getIdeas(void)const;
+
+        void setIdea(size_t i, std::string idea);
 };
