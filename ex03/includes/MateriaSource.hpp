@@ -1,37 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   AMateria.hpp                                       :+:      :+:    :+:   */
+/*   MateriaSource.hpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/17 14:51:39 by agilles           #+#    #+#             */
-/*   Updated: 2025/03/17 16:02:54 by agilles          ###   ########.fr       */
+/*   Created: 2025/03/17 15:47:59 by agilles           #+#    #+#             */
+/*   Updated: 2025/03/17 15:51:16 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#include <string>
+#include "IMateriaSource.hpp"
 
-#include "ICharacter.hpp"
-#include <iostream>
-
-class AMateria
+class MateriaSource: public IMateriaSource
 {
-	protected:
-		std::string _type;
-
-		AMateria(std::string const &type);
-		AMateria(AMateria const &copy);
+	private:
+		AMateria	*_learnInventory[4];
 
 	public:
-		virtual ~AMateria(void);
+		MateriaSource();
+		MateriaSource(MateriaSource const &cp);
+		~MateriaSource();
 
-		AMateria const	&operator=(AMateria const &copy);
+		MateriaSource const operator=(MateriaSource const &cp);
 
-		virtual AMateria	*clone()const = 0;
-		virtual void		use(ICharacter& target) = 0;
-
-		std::string const	&getType()const;
+		virtual void		learnMateria(AMateria *materia);
+		virtual AMateria*	createMateria(std::string const & type);
+		int					inLearnInventory(AMateria *materia);
 };

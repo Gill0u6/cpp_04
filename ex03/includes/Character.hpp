@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 15:35:16 by agilles           #+#    #+#             */
-/*   Updated: 2025/03/17 15:42:23 by agilles          ###   ########.fr       */
+/*   Updated: 2025/03/17 16:36:18 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class Character: public ICharacter
 		Character(Character const &cp);
 		~Character();
 
-		Character operator=(Character const &cp);
+		Character const &operator=(Character const &cp);
 
 		std::string const	&getName()const = 0;
 		void				setName(std::string const &name);
