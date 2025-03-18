@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 15:47:59 by agilles           #+#    #+#             */
-/*   Updated: 2025/03/17 15:51:16 by agilles          ###   ########.fr       */
+/*   Updated: 2025/03/18 17:20:42 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,8 @@ class MateriaSource: public IMateriaSource
 		MateriaSource(MateriaSource const &cp);
 		~MateriaSource();
 
-		MateriaSource const operator=(MateriaSource const &cp);
+		MateriaSource const &operator=(MateriaSource const &cp);
 
 		virtual void		learnMateria(AMateria *materia);
 		virtual AMateria*	createMateria(std::string const & type);
-		int					inLearnInventory(AMateria *materia);
 };

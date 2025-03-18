@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 15:35:16 by agilles           #+#    #+#             */
-/*   Updated: 2025/03/17 16:36:18 by agilles          ###   ########.fr       */
+/*   Updated: 2025/03/18 17:44:44 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include <string>
 
 #include "ICharacter.hpp"
+#include "AMateria.hpp"
 
 class Character: public ICharacter
 {

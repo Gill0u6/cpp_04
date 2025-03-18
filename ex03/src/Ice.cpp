@@ -6,11 +6,11 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 16:11:19 by agilles           #+#    #+#             */
-/*   Updated: 2025/03/17 16:18:48 by agilles          ###   ########.fr       */
+/*   Updated: 2025/03/18 17:05:49 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/Ice.hpp"
+#include "../includes/Ice.hpp"
 
 Ice::Ice(): AMateria("ice")
 {

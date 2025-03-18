@@ -6,11 +6,11 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 16:34:57 by agilles           #+#    #+#             */
-/*   Updated: 2025/03/17 17:39:54 by agilles          ###   ########.fr       */
+/*   Updated: 2025/03/18 17:05:49 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/Character.hpp"
+#include "../includes/Character.hpp"
 
 Character::Character(): _name("default"), _inventory()
 {

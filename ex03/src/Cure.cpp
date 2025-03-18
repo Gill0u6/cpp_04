@@ -6,11 +6,11 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 16:19:47 by agilles           #+#    #+#             */
-/*   Updated: 2025/03/17 16:20:36 by agilles          ###   ########.fr       */
+/*   Updated: 2025/03/18 17:05:56 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/Cure.hpp"
+#include "../includes/Cure.hpp"
 
 Cure::Cure(): AMateria("cure")
 {
