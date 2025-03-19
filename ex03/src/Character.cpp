@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 16:34:57 by agilles           #+#    #+#             */
-/*   Updated: 2025/03/18 17:05:49 by agilles          ###   ########.fr       */
+/*   Updated: 2025/03/19 15:17:07 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ void Character::equip(AMateria* m)
 				this->_inventory[i] = m->clone();
 			else
 				this->_inventory[i] = m;
-			std::cout << "Materia " << m->getType() << "equip to " << this->_name << " inventory to index " << i << std::endl;
+			std::cout << "Materia " << m->getType() << " equip to " << this->_name << " inventory to index " << i << std::endl;
 			return ;
 		}
 		if (m)
@@ -87,7 +87,7 @@ void Character::unequip(int idx)
 	if (idx >= 0 && idx < 4 && this->_inventory[idx])
 	{
 		std::cout << "Unequip " << this->_name << " Materia " << this->_inventory[idx] << " from slot " << idx << " of his inventory" << std::endl;
-		this->_inventory[idx] == NULL;
+		this->_inventory[idx] = NULL;
 	}
 	else if (idx < 0 || idx >= 4)
 		std::cout << "Cannot unequip Materia from wrong inventory slot" << std::endl;
@@ -102,7 +102,7 @@ void Character::use(int idx, ICharacter& target)
 	else if (idx < 0 || idx >= 4)
 		std::cout << "Cannot use Materia from wrong inventory slot" << std::endl;
 	else
-		std::cout << "Cannot use Materia, slot " << idx << " is emptry !" << std::endl;
+		std::cout << "Cannot use Materia, slot " << idx << " is empty !" << std::endl;
 
 }
 

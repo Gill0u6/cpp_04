@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 15:35:16 by agilles           #+#    #+#             */
-/*   Updated: 2025/03/18 17:44:44 by agilles          ###   ########.fr       */
+/*   Updated: 2025/03/19 15:06:44 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ class Character: public ICharacter
 
 		Character const &operator=(Character const &cp);
 
-		std::string const	&getName()const = 0;
+		std::string const	&getName()const;
 		void				setName(std::string const &name);
 
 		void	equip(AMateria* m);

@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/18 16:58:04 by agilles           #+#    #+#             */
-/*   Updated: 2025/03/18 17:35:24 by agilles          ###   ########.fr       */
+/*   Updated: 2025/03/19 15:13:20 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,9 +47,10 @@ void MateriaSource::learnMateria(AMateria *materia) //?
 		{
 			this->_learnInventory[i] = materia;
 			std::cout << "Materia " << materia->getType() << " added to learnInventory at index " << i << std::endl;
+			return ;
 		}
-		std::cout << "learnInventory already full !" << std::endl;
 	}
+	std::cout << "learnInventory already full !" << std::endl;
 }
 
 AMateria* MateriaSource::createMateria(std::string const &type) //?
@@ -60,5 +61,6 @@ AMateria* MateriaSource::createMateria(std::string const &type) //?
 			return (this->_learnInventory[i]->clone());
 	}
 	std::cout << "Cannot create a Materia with learnInventory type not valid or not in learnInventory" << std::endl;
+	return (NULL);
 }
 

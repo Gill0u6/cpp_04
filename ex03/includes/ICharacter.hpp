@@ -6,13 +6,16 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 14:53:30 by agilles           #+#    #+#             */
-/*   Updated: 2025/03/18 17:45:38 by agilles          ###   ########.fr       */
+/*   Updated: 2025/03/19 15:04:23 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
 #include "AMateria.hpp"
+#include <iostream>
+
+class AMateria;
 
 class ICharacter
 {

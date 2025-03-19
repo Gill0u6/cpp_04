@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 15:54:00 by agilles           #+#    #+#             */
-/*   Updated: 2025/03/18 17:05:49 by agilles          ###   ########.fr       */
+/*   Updated: 2025/03/19 15:14:33 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 AMateria::AMateria(std::string const &type): _type(type)
 {
-	std::cout << "AMateria Type Construcor called with this type" << type << std::endl;
+	std::cout << "AMateria Type Constructor called with this type " << type << std::endl;
 }
 
 AMateria::AMateria(AMateria const &copy)

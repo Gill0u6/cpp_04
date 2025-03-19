@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 14:51:39 by agilles           #+#    #+#             */
-/*   Updated: 2025/03/17 16:02:54 by agilles          ###   ########.fr       */
+/*   Updated: 2025/03/19 15:04:34 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 
 #include "ICharacter.hpp"
 #include <iostream>
+
+class ICharacter;
 
 class AMateria
 {
